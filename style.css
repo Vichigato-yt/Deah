@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #ff0000;
     color: white;
     padding: 20px;
     text-align: center;
@@ -26,7 +26,6 @@ header nav ul li {
 
 header nav a {
     color: white;
-    text-decoration: none;
 }
 
 div {
@@ -42,7 +41,7 @@ div {
     padding: 20px;
     width: 80%;
     margin: auto;
-    background-color: #f0f0f0;
+    background-color: #fffb00;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -54,7 +53,7 @@ label {
 
 
 footer {
-    background-color: #333;
+    background-color: #f80707;
     color: white;
     padding: 10px;
     text-align: center;
