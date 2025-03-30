@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Comentarios</title>
+    <link rel="stylesheet" href="style/Enviar_Comentarios.css">
+    <link rel="icon" href="imagenes/Icono/Icono.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Enviar Comentarios</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Comida_Ecuatoriana.html">Comida Ecuatoriana</a></li>
+                    <li><a href="Comida_Internacional.html">Comida Internacional</a></li>
+                    <li><a href="Acerca_de.html">Acerca de</a></li>
+                    <li><a href="Enviar_Comentarios.html">Enviar Comentarios</a></li>
+                </ul>
+        </header>
+
+        <main class="main-content">
+            <div class="contenedor">
+                <h2>Encuesta de Comentarios</h2>
+                <form id="form">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" required><br><br>
+                    
+                    <label>Correo electrónico:</label>
+                    <input type="email" name="gmail" required><br><br>
+                    
+                    <label>Contraseña:</label>
+                    <input type="password" name="contraseña" required><br><br>
+                    
+                    <label>Número de cédula:</label>
+                    <input type="number" name="cedula" required><br><br>
+                    
+                    <label>Motivo del comentario:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="queja">Queja</option>
+                        <option value="recomendacion">Recomendación</option>
+                    </select><br><br>
+                    
+                    <label>Edad:</label>
+                    <input type="number" name="edad" id="edad" required><br><br>
+                    
+                    <label>Dirección:</label>
+                    <input type="text" name="direccion" required><br><br>
+                    
+                    <label>Comentario:</label>
+                    <textarea name="comentario" required></textarea><br><br>
+                    
+                    <label>¿Te gustó?</label>
+                    <input type="radio" name="gusto" value="si" required> Sí
+                    <input type="radio" name="gusto" value="no"> No<br><br>
+                    
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Reiniciar">
+                </form>
+                <div id="error-message" class="error-message"></div>
+            </div>
+            <div id="mensaje" class="mensaje"></div>
+
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 - Página sobre Gastronomía</p>
+        </footer>
