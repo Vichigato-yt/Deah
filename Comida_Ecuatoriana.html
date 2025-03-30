@@ -3,31 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Inicio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Comida Ecuatoriana</title>
+    <link rel="stylesheet" href="style/Comida_Ecuatoriana.css">
     <link rel="icon" href="imagenes/Icono/Icono.ico" type="image/x-icon">
 </head>
-<header>
-    <h1>Comida Ecuatoriana</h1>
-    <nav class="nav">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Comida_Ecuatoriana.html">Comida Ecuatoriana</a></li>
-            <li><a href="Comida_Internacional.html">Comida Internacional</a></li>
-            <li><a href="Acerca_de.html">Acerca de</a></li>
-            <li><a href="Enviar_Comentarios.html">Enviar Comentarios</a></li>
-        </ul>
-</header>
 <body>
-    <div>
-        <h2>Subtitulo de la pagina</h2>
-        <section>
-            <p>Info random</p>
-            <p>yey</p>
-        </section>
+    <div class="container">
+        <header class="header">
+            <h1>Comida Ecuatoriana</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Comida_Ecuatoriana.html">Comida Ecuatoriana</a></li>
+                    <li><a href="Comida_Internacional.html">Comida Internacional</a></li>
+                    <li><a href="Acerca_de.html">Acerca de</a></li>
+                    <li><a href="Enviar_Comentarios.html">Enviar Comentarios</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content">
+            <section class="introduction">
+              <h2>Introducción</h2>
+              <p>
+                La comida ecuatoriana se caracteriza por su gran diversidad de platos típicos que varían según cada región del país. 
+                Desde la Sierra hasta la Costa, la Amazonía y las Islas Galápagos, Ecuador ofrece un repertorio culinario único que combina 
+                ingredientes locales con tradiciones ancestrales.
+              </p>
+            </section>
+      
+            <section class="gallery-slider">
+              <button id="prev">&#10094;</button>
+              <div class="gallery-wrapper">
+                <div class="gallery-item active">
+                  <img src="imagenes/Comida_Ecuatoriana/Ceviche.jpg" alt="Ceviche">
+                  <h3>Ceviche</h3>
+                  <p>Mariscos con limón y chifles o maíz tostado.</p>
+                </div>
+                <div class="gallery-item">
+                  <img src="imagenes/Comida_Ecuatoriana/Encebollado.jpg" alt="Encebollado">
+                  <h3>Encebollado</h3>
+                  <p>Sopa de pescado con yuca y limón, típica de la Costa.</p>
+                </div>
+                <div class="gallery-item">
+                  <img src="imagenes/Comida_Ecuatoriana/Bolon Verde.jpg" alt="Bolón de Verde">
+                  <h3>Bolón de Verde</h3>
+                  <p>Plátano verde con queso o chicharrón, típico desayuno.</p>
+                </div>
+                <div class="gallery-item">
+                  <img src="imagenes/Comida_Ecuatoriana/hornado.jpg" alt="Hornado">
+                  <h3>Hornado</h3>
+                  <p>Cerdo al horno servido con mote y ensalada.</p>
+                </div>
+              </div>
+              <button id="next">&#10095;</button>
+            </section>
+          </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 - Página sobre Gastronomía</p>
+        </footer>
     </div>
+    <script src="Scripts/Comida_Ecuatoriana.js"></script>
 </body>
-<footer>
-    <p>Esto es un pie de pagina</p>
-</footer>
 </html>
