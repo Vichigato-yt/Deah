@@ -1,33 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Inicio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imagenes/Icono/Icono.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comida Internacional</title>
+  <link rel="stylesheet" href="style/Comida_Internacional.css">
+  <link rel="icon" href="imagenes/Icono/Icono.ico" type="image/x-icon">
 </head>
-<header>
-    <h1>Comida Internacional</h1>
-    <nav class="nav">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Comida_Ecuatoriana.html">Comida Ecuatoriana</a></li>
-            <li><a href="Comida_Internacional.html">Comida Internacional</a></li>
-            <li><a href="Acerca_de.html">Acerca de</a></li>
-            <li><a href="Enviar_Comentarios.html">Enviar Comentarios</a></li>
-        </ul>
-</header>
 <body>
-    <div>
-        <h2>Subtitulo de la pagina</h2>
-        <section>
-            <p>Info random</p>
-            <p>yey</p>
-        </section>
-    </div>
-</body>
-<footer>
-    <p>Esto es un pie de pagina</p>
-</footer>
+  <div class="container">
+    <header class="header">
+      <h1>Comida Internacional</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Comida_Ecuatoriana.html">Comida Ecuatoriana</a></li>
+          <li><a href="Comida_Internacional.html">Comida Internacional</a></li>
+          <li><a href="Acerca_de.html">Acerca de</a></li>
+          <li><a href="Enviar_Comentarios.html">Enviar Comentarios</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="introduction">
+        <h2>Introducción</h2>
+        <p>
+          La comida internacional abarca sabores y tradiciones de diversas culturas del mundo. Descubre platos emblemáticos que van desde la clásica pizza italiana, el exquisito sushi japonés, la jugosa hamburguesa americana, hasta la auténtica pasta italiana.
+        </p>
+      </section>
+
+      <section class="gallery-slider">
+        <button id="prev">&#10094;</button>
+        <div class="gallery-wrapper">
+          <div class="gallery-item active">
+            <img src="imagenes/pizza.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>Deliciosa pizza italiana con ingredientes frescos.</p>
+          </div>
+          <div class="gallery-item">
+            <img src="imagenes/sushi.jpg" alt="Sushi">
+            <h3>Sushi</h3>
+            <p>Sushi japonés, un arte en cada bocado.</p>
+          </div>
+          <div class="gallery-item">
+            <img src="imagenes/hamburger.jpg" alt="Hamburguesa">
+            <h3>Hamburguesa</h3>
+            <p>Clásica hamburguesa americana, jugosa y sabrosa.</p>
+          </div>
+          <div class="gallery-item">
+            <img src="imagenes/pasta.jpg" alt="Pasta">
+            <h3>Pasta</h3>
+            <p>Pasta italiana con una salsa rica y auténtica.</p>
+          </div>
+        </div>
+        <button id="next">&#10095;</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 - Página sobre Gastronomía</p>
+    </footer>
+  </div>
+  <script src="Scripts/Comida_Internacional.js"></script>
+  </body>
 </html>
