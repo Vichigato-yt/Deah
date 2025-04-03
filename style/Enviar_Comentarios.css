@@ -84,3 +84,12 @@ body {
     background-color: #f44336;
     color: white;
   }
+
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #00796b;
+    color: white;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
